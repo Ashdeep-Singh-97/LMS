@@ -498,7 +498,7 @@ const TeacherPage: React.FC = () => {
         formData.append('video', blob, `lecture-${Date.now()}.webm`);
 
         try {
-          const response = await fetch(`${import.meta.env.VITE_API_URL}/upload`, {
+          const response = await fetch(`${import.meta.env.VITE_API_URL}/api/upload`, {
             method: 'POST',
             body: formData,
           });

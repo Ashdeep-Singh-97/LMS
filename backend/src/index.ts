@@ -89,7 +89,7 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json());
 // Handle upload route
-app.post('/upload', upload.single('video'), (req, res) => {
+app.post('/api/upload', upload.single('video'), (req, res) => {
   console.log('Video uploaded:', req.file?.filename);
   res.status(200).json({ message: 'Upload successful', filename: req.file?.filename });
 });
