@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.input {
+  @apply w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring focus:ring-blue-200;
+}
+.btn-page {
+  @apply px-3 py-1 border rounded hover:bg-gray-100 transition text-sm;
+}
