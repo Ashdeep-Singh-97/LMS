@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
@@ -15,7 +15,6 @@ interface CourseCardProps {
 
 const CourseCard = ({ course }: CourseCardProps) => {
   const { user } = useUser();
-  const navigate = useNavigate();
   const [enrolled, setEnrolled] = useState(false);
 
   useEffect(() => {
